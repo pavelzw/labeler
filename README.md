@@ -111,6 +111,15 @@ Various inputs are defined in [`action.yml`](action.yml) to let you configure th
 | `configuration-path` | The path to the label configuration file | `.github/labeler.yml` |
 | `sync-labels` | Whether or not to remove labels when matching files are reverted or no longer changed by the PR | `false`|
 
+#### Outputs
+
+If you need to know what labels were added or removed by the action, you can use the following outputs:
+
+| Name | Description | Example |
+| - | - | - |
+| `added-labels` | The labels that were added to the PR. | `['label1', 'label2']` |
+| `removed-labels` | The labels that were removed from the PR. | `['label3']` |
+
 # Contributions
 
 Contributions are welcome! See the [Contributor's Guide](CONTRIBUTING.md).

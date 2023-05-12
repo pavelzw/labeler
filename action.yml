@@ -15,6 +15,12 @@ inputs:
     default: false
     required: false
 
+outputs:
+  added-labels:
+    description: 'The labels that were added'
+  removed-labels:
+    description: 'The labels that were removed'
+
 runs:
   using: 'node16'
   main: 'dist/index.js'
